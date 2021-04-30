@@ -5,7 +5,7 @@ A simple presentation CV in order to introduce myself using:
 - Semantic-UI
 
 ### Check it online
-The project is hosted on [Netlify](http://www.mahatec.business)
+The project is hosted on [GitHubPages](https://EL-JOCHI.github.io/about-me)
 
 ## Upwork  Profile
 You can check my profile in [Upwork](https://www.upwork.com/freelancers/~01de836b37fb5a6e88) 

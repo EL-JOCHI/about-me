@@ -84,6 +84,7 @@ function App() {
         </p>
       }
     >
+      
       <Step className="slide-transparent" data={{ x: 0, y: 0, z: 0 }}>
         <Floppy />
       </Step>
@@ -433,15 +434,17 @@ function App() {
         ></iframe>
       </Step>
 
-      <Step className="slide"
+      <Step
+        className="slide"
         data={{
           x: -1800,
           y: -2500,
           rotateY: -90,
           rotateZ: 180,
           rotateOrder: "zyx",
-        }}>
-            <MoonFestival />
+        }}
+      >
+        <MoonFestival />
       </Step>
     </Impress>
   );
