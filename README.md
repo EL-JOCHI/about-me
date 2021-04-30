@@ -1,5 +1,8 @@
 # About me
-A simple presentation CV in order to introduce myself.
+A simple presentation CV in order to introduce myself using:
+- ReactJS
+- ImpressJS
+- Semantic-UI
 
 ### Check it online
 The project is hosted on [Netlify](http://www.mahatec.business)

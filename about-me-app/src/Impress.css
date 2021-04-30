@@ -1,0 +1,57 @@
+#react-impressjs {
+    background: #34068F;
+    background: linear-gradient(-45deg, #940B8A 0%, #4F7BDB 50%, #34068F 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0  #4F7BDB;
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.2 );
+}
+.slide-transparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+    color: white;
+}
+
+.margin-top-1em {
+    margin-top: 0.5em;
+}
+
+.hint {
+    background: rgba( 222, 222, 222, 0.20 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.0px );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.hint b {
+    color: rgba( 255, 255, 255, 0.8  );
+}

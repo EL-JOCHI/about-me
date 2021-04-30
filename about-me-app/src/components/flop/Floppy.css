@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+:root {
+    --floppy-color: #675d56;
+    --external-background: #ffcd39;
+    --label-line1: #ddc4b0;
+    --label-line2: #decdc1;
+    --text-note: #a4243b;
+    --shadow: #32281d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.floppy {
+    width: 290px;
+    height: 290px;
+    background-color: var(--floppy-color);
+    box-shadow: -5px 8px 10px var(--shadow);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    width: 190px;
+    height: 100px;
+    background-color: var(--floppy-color);
+    margin-left: 30px;
+    position: relative;
+    border-left: 2px solid #877d76;
+    border-right: 2px solid #877d76;
+    border-top: 2px solid var(--external-background);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.slider {
+    width: 150px;
+    height: inherit;
+    position: absolute;
+    left: 40px;
+    top: -3px;
+    border-radius: 8px;
+    border: 10px solid #33291f;
+    border-left-width: 100px;
+    z-index: 1;
+}
+
+.label-flop {
+    position: absolute;
+    width: 42px;
+    height: 82px;
+    background-color: rgba(0, 0, 0, 0.8);
+    right: 45px;
+    top: 6px;
+    z-index: 0;
+}
+
+.slider:hover {
+    left: 0;
+}
+
+.down {
+    width: 225px;
+    height: 180px;
+    border-left: 2px solid #877d76;
+    border-right: 2px solid #403c3a;
+    border-top: 2px solid #403c3a;
+    margin-left: 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+    position: relative;
+    background: linear-gradient(
+            to bottom,
+            var(--label-line1) 50%,
+            var(--label-line2) 50%
+    );
+    background-size: 100% 50px;
+}
+
+.down::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--external-background);
+    right: -25px;
+    bottom: 20px;
+    z-index: 1;
+    box-shadow: inset -4px 0 10px #333;
+}
+
+.down::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--external-background);
+    left: -25px;
+    bottom: 20px;
+    z-index: 1;
+    box-shadow: inset -5px 0 10px #333;
+}
+
+.notes {
+    font-family: "Gloria Hallelujah", cursive;
+    margin-left: 15px;
+    margin-top: 0.5rem;
+    color: var(--text-note);
+    font-size: 1.3rem;
+    transform: rotate(-8deg)
+}
+
+.double-line {
+    color: var(--text-note);
+    text-decoration: underline;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--text-note);
+}
